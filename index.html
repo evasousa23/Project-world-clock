@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World Clock</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -24,19 +24,21 @@
         <option value="">Dubai</option>
       </select>
 
-      <div class="city">
-        <div>
-          <h2>Lisbon</h2>
-          <div class="date">23 august 2023</div>
+       <div id="cities">
+        <div class="city" id="lisbon">
+          <div>
+            <h2>Lisbon</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time">1:01:11 <small>AM</small></div>
-      </div>
-      <div class="city">
-        <div>
-          <h2>Lisbon</h2>
-          <div class="date">23 august 2023</div>
+        <div class="city" id="jamaica">
+          <div>
+            <h2>Jamica</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time">1:01:11 <small>AM</small></div>
       </div>
     </div>
     <footer>
